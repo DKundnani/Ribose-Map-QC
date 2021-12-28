@@ -6,23 +6,32 @@
 
 import subprocess
 import pandas as pd
-
+import os
 import glob
-sample_names=glob.glob('FS*')
-sample_names.sort()
+
+
 
 import argparse
 parser = argparse.ArgumentParser(description='Quality statitics of ribosemap runs for post Alignment, Coordinate, Composition modules')
-parser.add_argument("-r", "--referencefasta", required=True, help="Specify the fasta file for reference of the sequenced Libraries. Make sure you have Ribosemap environment activated or have bedtools available to be used")
+
+parser.add_argument("-f", "--file", required=True, default='/storage/home/hcoda1/5/dkundnani3/p-fstorici3-0/rich_project_bio-storici/AGS/files', help="tab separated file with first column with library id mentioned in Ribosemap, and additional sample names if to be attached int the final file.")
+parser.add_argument("-t", "--trimfolder", required=True, default='/storage/coda1/p-fstorici3/0/shared/trimmed_reads/', help="tab separated file with first column with library id mentioned in Ribosemap, and additional sample names if to be attached int the final file.")
+parser.add_argument("-r", "--referencefasta" ,required=True, default='/storage/home/hcoda1/5/dkundnani3/p-fstorici3-0/rich_project_bio-storici/reference/sacCer2/sacCer2.fa', help="Specify the fasta file for reference of the sequenced Libraries. Make sure you have Ribosemap environment activated or have bedtools available to be used") 
 args= parser.parse_args()
 
-df = pd.DataFrame(columns=['Library', 'raw_reads', 'alignment_rate','barcoded_percent','unique_percent','Counts_All','Counts_Nuclear','Counts_Mito','Comp_nucl_rA','Comp_nucl_rC','Comp_nucl_rG','Comp_nucl_rU','Freq_nucl_rA','Freq_nucl_rC','Freq_nucl_rG','Freq_nucl_rU','Comp_mito_rA','Comp_mito_rC','Comp_mito_rG','Comp_mito_rU','Freq_mito_rA','Freq_mito_rC','Freq_mito_rG','Freq_mito_rU','pos>1_nucleus/totpos', 'pos>1_mito/totpos'])
+sample_names=pd.read_csv(args.file,sep='\t', header=None)
+
+print("Sample information provided")
+print(sample_names)
+
+df = pd.DataFrame(columns=['Library', 'raw_reads', 'alignment_rate','barcoded_percent','unique_percent','Counts_All','Counts_Nuclear','Counts_Mito','Comp_nucl_rA','Comp_nucl_rC','Comp_nucl_rG','Comp_nucl_rU','Freq_nucl_rA','Freq_nucl_rC','Freq_nucl_rG','Freq_nucl_rU','Comp_mito_rA','Comp_mito_rC','Comp_mito_rG','Comp_mito_rU','Freq_mito_rA','Freq_mito_rC','Freq_mito_rG','Freq_mito_rU','pos>1_nucleus/totpos', 'pos>1_mito/totpos'], dtype=object)
 
 #subprocess.call("conda activate conda_env", shell=True, universal_newlines=True)
-for file in sample_names:
+for lib in sample_names[0]:
+    file=glob.glob("*{}*".format(lib))[0]
     print("Analyzing "+file)
     #Parameter SetI:Processing Statitics: Raw reads from fastq files, Aignment rate, percent reads barcoded, unique read percent
-    raw_reads = subprocess.check_output("grep ^@ ../readyfiles/cut_"+file+".f*q | wc -l", shell=True, universal_newlines=True)
+    raw_reads = subprocess.check_output("grep ^@ "+args.trimfolder+"/*"+lib+".f*q | wc -l", shell=True, universal_newlines=True)
     alignment_rate = subprocess.check_output("tail -1 "+file+"/alignment/alignment.log", shell=True, universal_newlines=True)
     alignment_rate=alignment_rate[0:6]
     barcode_reads=subprocess.check_output("grep ^@ "+file+"/alignment/demultiplexed1.fq | wc -l", shell=True, universal_newlines=True)
