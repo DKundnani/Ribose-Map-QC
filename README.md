@@ -1,10 +1,9 @@
 
-
+<h1 align="center">Ribose-Map-QC</h1>
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
 -->
-<h3 align="center">Ribose-Map-QC</h3>
 
 <!-- PROJECT SHIELDS -->
 <!--
