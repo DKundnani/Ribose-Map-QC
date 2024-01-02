@@ -20,8 +20,7 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="##Installation"Installation</a>
+    <li><a href="##Installation">Installation</a></li>
       <ul>
         <li><a href="###getting-the-code">Getting the code</a></li>
        <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
