@@ -20,21 +20,6 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 <details>
   <summary>Table of Contents</summary>
   <ol>
-Table of Contents
-* [Installation](#Installation)
-  * [Getting the code](#getting-the-code)
-  * [Creating the enviroment with required dependencies](#Creating-the-enviroment-with-required-dependencies)
-* [Getting QC report](#Getting-QC-report)
-  * [Configure run](#Configure-run)
-  * [Filtration](#Filtration)
-* [Output](#Output)
-  </ol>
-</details>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
     <li>
       <a href="##Installation"Installation</a>
       <ul>
