@@ -16,7 +16,10 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
 Table of Contents
 * [Installation](#Installation)
   * [Getting the code](#getting-the-code)
@@ -25,6 +28,8 @@ Table of Contents
   * [Configure run](#Configure-run)
   * [Filtration](#Filtration)
 * [Output](#Output)
+  </ol>
+</details>
 
 <!-- TABLE OF CONTENTS -->
 <details>
