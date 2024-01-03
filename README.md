@@ -83,9 +83,9 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/DKundnani/Ribose-Map-QC/main
+[contributors-shield]: hhttps://img.shields.io/github/contributors/DKundnani/Ribose-Map-QC
 [contributors-url]: https://github.com/DKundnani/Ribose-Map-QC/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DKundnani/Ribose-Map-QC/main
+[forks-shield]: https://img.shields.io/github/forks/DKundnani/Ribose-Map-QC/
 [forks-url]: https://github.com/DKundnani/Ribose-Map-QC/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
