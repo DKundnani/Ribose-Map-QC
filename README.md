@@ -26,10 +26,10 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
        <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
       </ul>
     </li>
-    <li><a href="#Usage">Getting QC report</a></li>
+    <li><a href="#Usage">Usage</a></li>
       <ul>
         <li><a href="###Getting QC report">Getting QC report</a></li>
-       <li><a href="###Getting-counts-using-bed-file">#Getting-counts-using-bed-file</a></li>
+       <li><a href="###Getting-counts-using-bed-file">Getting-counts-using-bed-file</a></li>
       </ul>
   </ol>
 </details>
