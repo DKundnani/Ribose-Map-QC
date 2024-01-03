@@ -14,7 +14,8 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+<a href="https://github.com/DKundnani/Ribose-Map-QC/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/m/badges/shields" /></a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
