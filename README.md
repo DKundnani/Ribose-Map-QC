@@ -97,7 +97,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Deepali L. Kundnani- [!Linkedin][linkedin-shield][linkedin-url] - [deepali.kundnani@gmail.com](mailto::deepali.kundnani@gmail.com)
+Deepali L. Kundnani- [![LinkedIn][linkedin-shield]][linkedin-url] - [deepali.kundnani@gmail.com](mailto::deepali.kundnani@gmail.com)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
