@@ -24,6 +24,7 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
       <ul>
         <li><a href="###getting-the-code">Getting the code</a></li>
         <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
+        <li><a href="###Additional-Dependencies">Additional Dependencies</a></li>
       </ul>
     </li>
     <li><a href="##Usage">Usage</a></li>
@@ -57,9 +58,11 @@ conda env create --name RibosemapQC_env --file /Ribose-Map-QC/env.yml
 
 ### Additional Dependencies
 
-* Ribosemap generated output
+* Ribosemap generated output (For more info, see here: [https://github.com/agombolay/ribose-map](https://github.com/agombolay/ribose-map ))
 * Trimmed reads used in Ribosemap
 * Reference genome of the organism being used (also used in Ribosemap)
+
+<!-- USAGE -->
 
 ## Usage
 ### Getting QC report
@@ -80,8 +83,6 @@ conda activate RibosemapQC_env #activating Enviroment
 Rscript path/to/Ribose-Map-QC/qualviz.R -q QC.tsv -l files #Using QC.tsv generated from either quality.py or qual_short.py
 Rscript path/to/Ribose-Map-QC/counts_viz.R -c QC.tsv -l files #Using QC.tsv generated from generate_QC_frombed.py
 ```
-
-
 
 
 
