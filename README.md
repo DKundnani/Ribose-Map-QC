@@ -32,6 +32,10 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
         <li><a href="###Getting-counts-using-bed-file">Getting counts using bed file</a></li>
        <li><a href="###Visualization">Visualization</a></li>
       </ul>
+    <li><a href="##Contributing">Contributing</a></li>
+    <li><a href="##License">License</a></li>
+    <li><a href="##Contact">Contact</a></li>
+    <li><a href="##Citations">Citations</a></li>
   </ol>
 </details>
 
