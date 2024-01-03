@@ -83,10 +83,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/all-contributors/DKundnani/Ribose-Map-QC/main
+[contributors-shield]: https://img.shields.io/github/contributors/DKundnani/Ribose-Map-QC/main
 [contributors-url]: https://github.com/DKundnani/Ribose-Map-QC/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-shield]: https://img.shields.io/github/forks/DKundnani/Ribose-Map-QC/main
+[forks-url]: https://github.com/DKundnani/Ribose-Map-QC/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
