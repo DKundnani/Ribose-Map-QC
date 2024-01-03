@@ -14,8 +14,9 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-<a href="https://github.com/DKundnani/Ribose-Map-QC/pulse" alt="Activity">
-        <img src="https://img.shields.io/github/commit-activity/t/DKundnani/Ribose-Map-QC/main" /></a>
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Commits][Commits-shield]][Commits-url]
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -97,3 +98,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
+[commits-url]: https://github.com/DKundnani/Ribose-Map-QC/pulse
+[commits-shield]: https://img.shields.io/github/commit-activity/t/DKundnani/Ribose-Map-QC/main
+:<a href="https://github.com/DKundnani/Ribose-Map-QC/pulse" alt="Activity">
+        <img src="https://img.shields.io/github/commit-activity/t/DKundnani/Ribose-Map-QC/main" /></a>
