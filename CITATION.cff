@@ -4,7 +4,7 @@ authors:
 - family-names: "Kundnani"
   given-names: "Deepali"
   orcid: "https://orcid.org/0000-0002-2289-3554"
-title: "My Research Software"
+title: "Ribose-Map-QC"
 version: 1.0.0
 date-released: 2024-01-02
 url: "https://github.com/DKundnani/Ribose-Map-QC/"
