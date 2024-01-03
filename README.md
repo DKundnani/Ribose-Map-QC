@@ -47,7 +47,7 @@ git clone https://github.com/DKundnani/Ribose-Map-QC.git
 ### Creating the enviroment with required dependencies
 
 ```sh
-conda env create --file rNMP_match_analysis/mm_removal.yml
+conda env create --file /Ribose-Map-QC/env.yml
 ```
 
 ## Getting QC report
