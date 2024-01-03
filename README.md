@@ -7,14 +7,14 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
 <a name="readme-top"></a>
 <!--
 -->
-
+[![Commits][Commits-shield]][Commits-url]
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
+[![Website][website-shield]][website-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Commits][Commits-shield]][Commits-url]
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -26,8 +26,11 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
        <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
       </ul>
     </li>
-    <li><a href="#Getting-QC-report">Getting QC report</a></li>
-    <li><a href="#Getting-counts-using-bed-file">Getting counts using bed file</a></li>
+    <li><a href="#Usage">Getting QC report</a></li>
+      <ul>
+        <li><a href="###Getting QC report">Getting QC report</a></li>
+       <li><a href="###Getting-counts-using-bed-file">#Getting-counts-using-bed-file</a></li>
+      </ul>
   </ol>
 </details>
 
@@ -98,3 +101,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [product-screenshot]: images/screenshot.png
 [commits-url]: https://github.com/DKundnani/Ribose-Map-QC/pulse
 [commits-shield]: https://img.shields.io/github/commit-activity/t/DKundnani/Ribose-Map-QC?style=for-the-badge
+[website-shield]: https://img.shields.io/website?url=http%3A%2F%2Fdkundnani.bio%2F&style=for-the-badge
+[website-url]:http://dkundnani.bio/ 
