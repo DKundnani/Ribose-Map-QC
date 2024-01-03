@@ -130,7 +130,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * <b>Distinct features of ribonucleotides within genomic DNA in Aicardi-Goutières syndrome (AGS)-ortholog mutants of <i>Saccharomyces cerevisiae</i> </b>
 Deepali L. Kundnani, Taehwan Yang, Alli L. Gombolay, Kuntal Mukherjee, Gary Newnam, Chance Meers, Zeel H. Mehta, Celine Mouawad, Francesca Storici
 bioRxiv 2023.10.02.560505; doi: https://doi.org/10.1101/2023.10.02.560505
-* [![DOI](https://zenodo.org/badge/382943161.svg)](https://zenodo.org/doi/10.5281/zenodo.10453008)
+* Kundnani, D. (2024). Ribose-Map-QC (1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.10455801](https://doi.org/10.5281/zenodo.10455801) [![DOI](https://zenodo.org/badge/382943161.svg)](https://zenodo.org/doi/10.5281/zenodo.10453008)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
