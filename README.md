@@ -23,15 +23,15 @@ Also supported by percentage and composition of rNMPs from ribose-seq output
     <li><a href="##Installation">Installation</a></li>
       <ul>
         <li><a href="###getting-the-code">Getting the code</a></li>
-       <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
+        <li><a href="###Creating-the-enviroment-with-required-dependencies">Creating the enviroment with required dependencies</a></li>
       </ul>
     </li>
     <li><a href="##Usage">Usage</a></li>
       <ul>
         <li><a href="###Getting QC report">Getting QC report</a></li>
-       <li><a href="###Getting-counts-using-bed-file">Getting counts using bed file</a></li>
+        <li><a href="###Getting-counts-using-bed-file">Getting counts using bed file</a></li>
+       <li><a href="###Visualization">Visualization</a></li>
       </ul>
-    <li><a href="##Visualization">Visualization</a></li>
   </ol>
 </details>
 
@@ -70,7 +70,7 @@ Place all the bed files in a folder e.g. path/to/bed
 generate_QC_frombed.py f path/to/files -r path/to/reference/sacCer2/sacCer2.fa #Generates QC.tsv as output
 ```
 
-## Visualization
+### Visualization
 ```bash
 conda activate RibosemapQC_env #activating Enviroment
 Rscript path/to/Ribose-Map-QC/qualviz.R -q QC.tsv -l files #Using QC.tsv generated from either quality.py or qual_short.py
