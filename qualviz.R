@@ -61,6 +61,8 @@ writeLines("\n...Defining required functions...\n")
 writeLines("...Preprocessing input file(s)...")
 QC<-read.table(opt$QC,sep="\t",header=T)
 libinfo<-read.table(opt$libinfo,sep="\t",header=T)
+rownames(QC)=QC$Library
+QC=QC[libinfo$Library,]
 QC$Library<-libinfo$Label
 
 #4.Main code
@@ -239,7 +241,7 @@ dev.off()
 writeLines("\n... plotting composition...\n")
 
 for (comp in c("Comp_mito", "Comp_nucl", "Freq_mito", "Freq_nucl")) {
-  png(paste(comp,".png",sep=""),width=10, height=6,units= "in",  res=600)
+  png(paste(comp,".png",sep=""),width=length(unique(libinfo$Group))*2.1, height=6,units= "in",  res=600)
   df=QC[,grep(pattern=comp, x=colnames(QC))]
   df$Group=libinfo$Group
   data=gather(df,key="rNTP", value = "Percentage", -Group)

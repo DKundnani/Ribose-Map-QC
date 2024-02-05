@@ -48,8 +48,8 @@ for lib in sample_names[0]:
          temp=subprocess.check_output("grep chrM "+file+"/coordinate30/"+file+"-chromosomes_seq.bed | grep -i '\s"+ribo+"$'| wc -l", shell=True, universal_newlines=True)
          vars()[prefNTP]=int(temp.strip('\n'))
     '''
-    mito_total=int(subprocess.check_output("cat "+file+"/coordinate30/"+file+"-chrM.bed | wc -l", shell=True, universal_newlines=True))
-    nucl_total=int(subprocess.check_output("cat "+file+"/coordinate30/"+file+"-chromosomes.bed | wc -l", shell=True, universal_newlines=True))
+    mito_total=int(subprocess.check_output("cat "+file+"/coordinate30/"+file+"-chrM.coords.bed | wc -l", shell=True, universal_newlines=True))
+    nucl_total=int(subprocess.check_output("cat "+file+"/coordinate30/"+file+"-chromosomes.coords.bed | wc -l", shell=True, universal_newlines=True))
     total_ribos=mito_total+nucl_total
 
     comp_mito=subprocess.check_output("cut -f2 "+file+"/composition30/"+file+"-chrM.counts.txt", shell=True, universal_newlines=True)
@@ -67,14 +67,14 @@ for lib in sample_names[0]:
     freq_nucl=freq_nucl.split('\n')
     
     #Parameter Set IV: Percentage of counts greater than one in nucleus and mitochondria
-    positions_nucl=subprocess.check_output("grep -v 'chrM' "+file+"/coordinate30/"+file+".counts.tab | wc -l", shell=True, universal_newlines=True)
+    positions_nucl=subprocess.check_output("grep -v 'chrM' "+file+"/coordinate30/"+file+"-chromosomes.counts.tab | wc -l", shell=True, universal_newlines=True)
     positions_nucl=int(positions_nucl.strip('\n'))
-    positions1_nucl = subprocess.check_output("grep -v 'chrM' "+file+"/coordinate30/"+file+".counts.tab | awk '$7>1' | wc -l", shell=True, universal_newlines=True)
+    positions1_nucl = subprocess.check_output("grep -v 'chrM' "+file+"/coordinate30/"+file+"-chromosomes.counts.tab | awk '$7>1' | wc -l", shell=True, universal_newlines=True)
     positions1_nucl=int(positions1_nucl.strip('\n'))
     
-    positions_mito=subprocess.check_output("grep 'chrM' "+file+"/coordinate30/"+file+".counts.tab | wc -l", shell=True, universal_newlines=True)
+    positions_mito=subprocess.check_output("grep 'chrM' "+file+"/coordinate30/"+file+"-chrM.counts.tab | wc -l", shell=True, universal_newlines=True)
     positions_mito=int(positions_mito.strip('\n'))
-    positions1_mito= subprocess.check_output("grep 'chrM' "+file+"/coordinate30/"+file+".counts.tab | awk '$7>1' | wc -l", shell=True, universal_newlines=True)
+    positions1_mito= subprocess.check_output("grep 'chrM' "+file+"/coordinate30/"+file+"-chrM.counts.tab | awk '$7>1' | wc -l", shell=True, universal_newlines=True)
     positions1_mito=int(positions1_mito.strip('\n'))
     
     pos_mito=str(positions1_mito)+"/"+str(positions_mito)
